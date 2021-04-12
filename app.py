@@ -21,11 +21,6 @@ class User(db.Model):
         self.email = email
 
 
-@app.route("/")
-def home():
-    return redirect(url_for('index'))
-
-
 @app.route("/index", methods=["GET", "POST"])
 def index():
     if request.method == 'POST':
@@ -45,5 +40,4 @@ def index():
 
 
 if __name__ == "__main__":
-    db.create_all()
     app.run(debug=True)
