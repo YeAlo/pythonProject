@@ -7,8 +7,6 @@
 
 <body>
 
-	<!-- Its the form where a user can submit his or her name and email -->
-
 	<form class="form-inline" action="" method="POST">
 		<label>Name</label>
 	  	<input type="text" id="name" placeholder="Enter Name" name="name">
@@ -16,9 +14,6 @@
 	  	<input type="email" id="email" placeholder="Enter Email Id" name="email">
 	  	<button type="submit">Submit</button>
 	</form>
-
-
-	<!-- The table where all the data from the DB will be appeared -->
 
 	<table class="data" border="1" style="width: 100%; margin-top: 20px; text-align: center;">
 		<tr>
@@ -29,8 +24,6 @@
 	    	<td>Name</td>
 	    	<td>Email</td>
 	  	</tr>
-
-	  	<!-- The user_data is a variable containing all the user data from the DB. -->
 
 	  	{% for user in user_data %}
 	  	<tr>
